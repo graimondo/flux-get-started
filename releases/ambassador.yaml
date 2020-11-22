@@ -1,0 +1,14 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: ambassador
+  namespace: ambassador
+  annotations:
+    fluxcd.io/automated: "false"
+spec:
+  releaseName: ambassador
+  chart:
+    git: https://github.com/datawire/ambassador-chart
+    ref: master
+    path: .
