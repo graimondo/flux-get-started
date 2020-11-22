@@ -1,5 +1,5 @@
 dependencies:
-- name: bitnami/mariadb
+- name: mariadb
   version: 10.5.8
   repository: https://charts.bitnami.com/bitnami
   condition: mariadb.enabled
